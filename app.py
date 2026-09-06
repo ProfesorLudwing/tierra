@@ -20,7 +20,12 @@ IMAGENES_CAPAS = {
 # Función auxiliar para mostrar imagen local
 def mostrar_imagen(nombre_archivo, texto_alternativo):
     if os.path.exists(nombre_archivo):
-        st.image(nombre_archivo, caption=texto_alternativo, use_container_width=True)
+        st.image(
+            nombre_archivo, 
+            caption=texto_alternativo, 
+            use_container_width=True, 
+            preview_image_with_zoom=True  # <-- ¡Esta línea activa el zoom táctil!
+        )
     else:
         st.warning(f"⚠️ Guarda una imagen llamada '{nombre_archivo}' en tu carpeta para verla aquí.")
 
