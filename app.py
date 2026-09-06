@@ -28,7 +28,7 @@ def mostrar_imagen(nombre_archivo, texto_alternativo):
 tab_general, tab_geo, tab_hidro, tab_atmo = st.tabs(["🌍 Nuestro Planeta", "⛰️ La Geosfera", "💧 La Hidrosfera", "🌤️ La Atmósfera"])
 
 with tab_general:
-    col1, col2 = st.columns()
+    col1, col2 = st.columns(2)
     with col1:
         mostrar_imagen(IMAGENES_CAPAS["Vista General"], "La Tierra vista desde el espacio exterior.")
     with col2:
@@ -48,7 +48,7 @@ with tab_geo:
         st.markdown("- **Núcleo (2,890 - 6,371 km):** Esfera de hierro y níquel dividida en un exterior líquido y un centro sólido extremadamente denso.")
 
 with tab_hidro:
-    col1, col2 = st.columns()
+    col1, col2 = st.columns(2)
     with col1:
         mostrar_imagen(IMAGENES_CAPAS["Hidrosfera"], "Distribución del agua global")
     with col2:
