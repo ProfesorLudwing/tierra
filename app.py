@@ -17,21 +17,20 @@ IMAGENES_CAPAS = {
     "Atmo_Temperatura": "atmosfera_temperatura.jpg"
 }
 
-# Función auxiliar para mostrar imagen local compatible con zoom móvil
+# Función auxiliar para mostrar imagen local con botón de zoom nativo para móvil
 def mostrar_imagen(nombre_archivo, texto_alternativo):
     if os.path.exists(nombre_archivo):
-        # Muestra la imagen estándar sin romper la app
+        # Muestra la imagen en la página web
         st.image(nombre_archivo, caption=texto_alternativo, use_container_width=True)
         
-        # Ofrece una alternativa nativa y limpia para móviles usando HTML
+        # Botón nativo para abrir/descargar la imagen a pantalla completa en el celular
         with open(nombre_archivo, "rb") as file:
-            st.markdown(
-                f'<a href="data:image/png;base64," target="_blank" style="text-decoration:none;">'
-                f'<button style="width:100%; padding:8px; background-color:#2e7d32; color:white; '
-                f'border:none; border-radius:4px; cursor:pointer; font-weight:bold;">'
-                f'🔍 Toca aquí para ver en pantalla completa y hacer zoom'
-                f'</button></a>',
-                unsafe_allow_html=True
+            st.download_button(
+                label="🔍 Abrir a pantalla completa para hacer zoom",
+                data=file,
+                file_name=nombre_archivo,
+                mime="image/jpeg" if nombre_archivo.endswith(".jpg") else "image/png",
+                use_container_width=True
             )
     else:
         st.warning(f"⚠️ Guarda una imagen llamada '{nombre_archivo}' en tu carpeta para verla aquí.")
