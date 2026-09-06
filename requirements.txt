@@ -1,6 +1,6 @@
 pandas
 sqlalchemy
-streamlit
+streamlit>=1.39.0
 reportlab
 streamlit
 plotly
