@@ -17,21 +17,10 @@ IMAGENES_CAPAS = {
     "Atmo_Temperatura": "atmosfera_temperatura.jpg"
 }
 
-# Función auxiliar para mostrar imagen local con botón de zoom nativo para móvil
+# Función estándar y limpia para el OVA
 def mostrar_imagen(nombre_archivo, texto_alternativo):
     if os.path.exists(nombre_archivo):
-        # Muestra la imagen en la página web
         st.image(nombre_archivo, caption=texto_alternativo, use_container_width=True)
-        
-        # Botón nativo para abrir/descargar la imagen a pantalla completa en el celular
-        with open(nombre_archivo, "rb") as file:
-            st.download_button(
-                label="🔍 Abrir a pantalla completa para hacer zoom",
-                data=file,
-                file_name=nombre_archivo,
-                mime="image/jpeg" if nombre_archivo.endswith(".jpg") else "image/png",
-                use_container_width=True
-            )
     else:
         st.warning(f"⚠️ Guarda una imagen llamada '{nombre_archivo}' en tu carpeta para verla aquí.")
 
