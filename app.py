@@ -13,7 +13,7 @@ IMAGENES_CAPAS = {
     "Vista General": "general.gif",
     "Capas": "tierra.png",
     "Geosfera": "geosfera.jpg",
-    "Geosfera_Temperatura": "geosfera_temperatura.jpg",
+    "Geosfera_Temperatura": "geosfera_temperatura.png",
     "Hidrosfera": "hidrosfera.jpg",
     "Atmo_Distancia": "atmosfera_distancia.jpg",
     "Atmo_Temperatura": "atmosfera_temperatura.jpg"
