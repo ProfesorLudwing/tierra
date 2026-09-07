@@ -13,7 +13,7 @@ IMAGENES_CAPAS = {
     "Vista General": "general.gif",
     "Capas": "tierra.png",
     "Geosfera": "geosfera.jpg",
-    "Geosfera_Temperatura": "geosfera_temperatura.jpg", # Corregido el dedazo de las letras
+    "Geosfera_Temperatura": "geosfera_temperatura.png", # Corregido el dedazo de las letras
     "Hidrosfera": "hidrosfera.jpg",
     "Atmo_Distancia": "atmosfera_distancia.jpg",
     "Atmo_Temperatura": "atmosfera_temperatura.jpg"
