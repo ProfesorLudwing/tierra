@@ -213,9 +213,12 @@ with tab_atmo:
         with subtab_distanciat:
             st.warning("### 🌤️ La Atmósfera")
             st.markdown("**Capas físicas del escudo gaseoso:**")
-            st.markdown("1. **Troposfera (0 - 12 km):** Alberga el aire respirable y los fenómenos meteorológicos.")
-            st.markdown("2. **Estratosfera (12 - 50 km):** Contiene la capa de ozono que filtra la radiación UV.")
-            st.markdown("3. **Mesosfera, Termosfera y Exosfera:** Capas externas donde los gases se disipan hacia el espacio exterior.")
+            st.markdown("1. **Troposfera (0 - 20 km):** Alberga el aire respirable y los fenómenos meteorológicos.")
+            st.markdown("2. **Estratosfera (20 - 50 km):** Contiene la capa de ozono que filtra la radiación UV.")
+            st.markdown("3. **Mesosfera(50 - 85 km):**En esta zona se desintegran la mayoría de los meteoritos, creando las estrellas fugaces.")
+            st.markdown("4. **Termosfera(85 - 600 km):**Aquí orbitan estaciones espaciales y transbordadores.")
+            st.markdown("5. **Exosfera (600 km a 10,000 km):** Es donde se sitúan muchos satélites antes de fusionarse con el espacio exterior.")
+            st.markdown("**Nota aclaratoria sobre los satélites: Aunque la imagen educativa ubica de forma general a los satélites en la exosfera (hasta 10,000 km), en la realidad se dividen por órbitas según su función. La Estación Espacial está en la termosfera a 400 km. Los satélites meteorológicos operan en dos extremos: los polares a 850 km (resolución detallada) y los geoestacionarios a 35,786 km (visión global de las nubes). Finalmente, la gran mayoría de los satélites comerciales (televisión e internet pesada) operan en esa misma órbita lejana de 35,786 km, superando por mucho los límites ilustrados en el gráfico.**")
         with subtab_temperaturat:
             st.warning("### 🌡️ Temperatura por capa")
             st.markdown("**Cómo cambia la temperatura al ascender:**")
