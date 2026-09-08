@@ -188,6 +188,7 @@ with tab_hidro:
         st.markdown("**Distribución real del agua en la Tierra:**")
         st.markdown("• **97% Agua Salada:** Mares y océanos que cubren la mayor parte de la corteza.")
         st.markdown("• **3% Agua Dulce:** Concentrada principalmente en los glaciares de los polos, aguas subterráneas y una mínima fracción en ríos y lagos.")
+        st.markdown("**0.007% Agua Disponible: Es el porcentaje real de toda el agua del planeta que se encuentra líquida y accesible en ríos, lagos y acuíferos para el consumo humano.** ")
 
     st.write("---")
     with st.expander("📝 Pon a prueba tus conocimientos sobre la Hidrosfera"):
